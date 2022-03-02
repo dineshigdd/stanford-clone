@@ -1,11 +1,11 @@
  /*
-Theme Name:   PopularFx Child
+Theme Name:   stanfordclone-child
 
- Description:  Twenty Twenty-One Child Theme
+ Description:   stanfordclone-child is based on underscore theme
 
  Author:       Daminda Dinesh
 
- Template:     popularfx
+ Template:      stanfordclone
 
  Version:      1.0.0
 
@@ -15,8 +15,13 @@ Theme Name:   PopularFx Child
 
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
 
- Text Domain:  popularfxchild
+ Text Domain:   stanford-clone-theme-child
 
 */
+*{
+    margin: 0px;
+}
 
-
+body{
+    font-size: 0.9em;
+}
