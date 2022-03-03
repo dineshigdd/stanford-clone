@@ -12,29 +12,30 @@
     text-align: right;
 }
 
-.site-title > a{
-    color: black;
+#primary-menu{
+    background: #F4F4F4;
 }
-
 
 #primary-menu li{
     text-align: center;
-    
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
 }
 
 ul#menu-header-menu  {
-    background: lightgray;
+    background: #F4F4F4;
 }
+
 
 #menu-header-menu > li> a{
     padding: 0.625em 1em;
     outline-offset: -4px;
-    font-size: .7555em;
+    font-size: .7555em; 
+    color: #000;
 }
 
 .site-branding{
-    position: relative;
-    color: #fff;
+    position: relative;    
     display: inline-block;
     float: left;
     font-size: 1.5555555556em;
@@ -49,14 +50,24 @@ ul#menu-header-menu  {
     #primary-menu{
         display: none;
         grid-template-columns: repeat(2,minmax(200px, 1fr));
-        grid-gap: 1px;
+        grid-gap: 0.02px;
         z-index: 900;
         margin: 0;
         padding: 0;
     }
 
-    #menu-header-menu{
-       
+    #primary-menu li{
+        list-style: none;
+        background-color: #F4F4F4;
+        padding: 15px 50px 15px 50px;
+        z-index: 900;
+    }
+
+    #primary-menu li a {
+        color: #000;
+    }
+
+    #menu-header-menu{       
         padding: 0;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -73,9 +84,7 @@ ul#menu-header-menu  {
         flex-wrap: wrap;
         min-width: 320px;
         max-width: 100%;
-        text-align: center;
- 
-      
+        text-align: center;      
     }
 
     /* #menu-header-menu > li> a {
@@ -84,19 +93,11 @@ ul#menu-header-menu  {
     } */
   
 
-
-    #primary-menu li{
+    #menu-header-menu li{
         list-style: none;
-        background-color: #2196F3;
-        padding: 15px 50px 15px 50px;
         z-index: 900;
-}
-
-#menu-header-menu li{
-    list-style: none;
-    z-index: 900;
-    padding: 12px;
-}
+        padding: 12px;
+    }
 
 @media (min-width:576px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
 
@@ -150,9 +151,13 @@ ul#menu-header-menu  {
         justify-content: flex-end;
     }
   
-    #menu-header-menu > li> a{
+    #masthead > section > div > p > a::after{
+        content: " University";
+    } 
+  
+   /*  #menu-header-menu > li> a{
         color: lightgray;
-    }
+    } */
     
 }
 
