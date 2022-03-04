@@ -1,10 +1,11 @@
 #masthead {
     position: fixed;
     width: 100%;
+    top: 0;
 }
 
 .site-branding-search-menuIcon-wrapper{
-    background-color: #b1040e;
+    background-color:rgb(49, 43, 43);
     font-family: Source Sans Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
     display: inline-block;
     z-index: 1000;
@@ -14,6 +15,7 @@
 
 #primary-menu{
     background: #F4F4F4;
+    
 }
 
 #primary-menu li{
@@ -30,8 +32,7 @@ ul#menu-header-menu  {
 #menu-header-menu > li> a{
     padding: 0.625em 1em;
     outline-offset: -4px;
-    font-size: .7555em; 
-    color: #000;
+    font-size: .7555em;     
 }
 
 .site-branding{
@@ -46,6 +47,10 @@ ul#menu-header-menu  {
 }
 
 @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+    
+  /*   #site-navigation{
+        display: none;
+    } */
 
     #primary-menu{
         display: none;
@@ -69,22 +74,26 @@ ul#menu-header-menu  {
 
     #menu-header-menu{       
         padding: 0;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
+       /*  display: -webkit-box;
+        display: -ms-flexbox; */
+        display: none;
+        /* -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal; */
+        /* -ms-flex-direction: row; */
         flex-direction: row;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
+        /* -webkit-box-pack: center;
+        -ms-flex-pack: center; */
         justify-content: center;
         margin: 0 auto;
-        -ms-flex-wrap: wrap;
+        /* -ms-flex-wrap: wrap; */
         flex-wrap: wrap;
         min-width: 320px;
         max-width: 100%;
         text-align: center;      
+    }
+
+    #menu-header-menu > li> a{
+        color:#000;
     }
 
     /* #menu-header-menu > li> a {
@@ -116,15 +125,16 @@ ul#menu-header-menu  {
 
 
 }
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+
 
 @media (min-width:1025px) { 
     /* big landscape tablets, laptops, and desktops */ 
     #primary-menu{
         display: grid;
         grid-template-columns: repeat(8,minmax(100px, 1fr));
-        grid-gap: 1px;
-        
+        grid-gap: 0.1px;
+        padding-left: calc(50% - 715px);
+        padding-right: calc(50% - 715px);
     }
     
     #primary-menu li{
@@ -155,12 +165,15 @@ ul#menu-header-menu  {
         content: " University";
     } 
   
-   /*  #menu-header-menu > li> a{
-        color: lightgray;
-    } */
+    #menu-header-menu > li> a{
+        color: #F4F4F4;
+    } 
     
 }
 
+/* 
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops  }
 @media (min-width:1281px) { 
-    /* hi-res laptops and desktops */ 
-}
+    hi-res laptops and desktops 
+} 
+*/
