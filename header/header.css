@@ -53,7 +53,7 @@ ul#menu-header-menu  {
     } */
 
     #primary-menu{
-        display: grid;
+        display: none;
         grid-template-columns: repeat(2,minmax(200px, 1fr));
         grid-gap: 0.02px;
         z-index: 900;
@@ -76,7 +76,7 @@ ul#menu-header-menu  {
         padding: 0;
        /*  display: -webkit-box;
         display: -ms-flexbox; */
-        display: flex;
+        display: none;
         /* -webkit-box-orient: horizontal;
         -webkit-box-direction: normal; */
         /* -ms-flex-direction: row; */
