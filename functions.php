@@ -39,3 +39,8 @@ add_action( 'init', 'register_secondary_nav_menu' );
  //resource:https://webdesign.tutsplus.com/tutorials/how-to-add-custom-javascript-to-your-wordpress-site--cms-34368
 ?>
 
+<script>
+
+
+
+</script>

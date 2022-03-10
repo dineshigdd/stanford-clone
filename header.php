@@ -16,7 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+	<script src="https://kit.fontawesome.com/e937081694.js" crossorigin="anonymous"></script>
 	<?php wp_head(); ?>
 </head>
 
@@ -45,8 +45,8 @@
 					<p class="site-description"><?php echo $stanford_clone_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 				<?php endif; ?>
 			</div><!-- .site-branding -->
-			<button id="search-toggle" aria-controls="site-search" aria-expanded="false" data-ga-action="Search toggle">Search</button>
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'stanford-clone-theme' ); ?></button>
+			<button id="search-toggle" aria-controls="site-search" aria-expanded="false" data-ga-action="Search toggle"><i class="fa-solid fa-magnifying-glass"></i><?php esc_html_e( ' Search', 'stanford-clone-theme-search' ); ?></button>
+			<button id="menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" onclick="toggle_nav_menu()"><?php esc_html_e( 'Menu', 'stanford-clone-theme' ); ?></button>
 			</section>
 		
 		<nav id="site-navigation" class="main-navigation">			

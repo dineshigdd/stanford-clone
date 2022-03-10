@@ -1,16 +1,17 @@
 #masthead {
     position: fixed;
     width: 100%;
-    top: 0;
+    top: 0;   
+    left: 0;
 }
 
 .site-branding-search-menuIcon-wrapper{
-    background-color:rgb(49, 43, 43);
+    background-color:#b1040e;
     font-family: Source Sans Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
-    display: inline-block;
-    z-index: 1000;
     width: 100%;
     text-align: right;
+    height: 2.6666666667em;
+    font-weight: 600;
 }
 
 #primary-menu{
@@ -37,28 +38,38 @@ ul#menu-header-menu  {
 
 .site-branding{
     position: relative;    
-    display: inline-block;
-    float: left;
-    font-size: 1.5555555556em;
+    /* display: inline-block; */
+    float: left;    
     font-weight: 400;
     line-height: 1.25em;
     margin-left: 20px;
    
 }
 
+
+#search-toggle , #menu-toggle{
+    margin: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: inherit;
+}
+
 @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
     
-  /*   #site-navigation{
-        display: none;
-    } */
+    #site-navigation {
+        position: relative;
+        top: -16px;
+      }
 
     #primary-menu{
         display: none;
         grid-template-columns: repeat(2,minmax(200px, 1fr));
         grid-gap: 0.02px;
         z-index: 900;
-        margin: 0;
+        /* margin: 0; */
         padding: 0;
+        
     }
 
     #primary-menu li{
@@ -72,7 +83,14 @@ ul#menu-header-menu  {
         color: #000;
     }
 
+    .site-title > a:nth-child(1){
+        font-size: 1.3333333333em;
+        top:0.4583333333em;
+    }
+    
     #menu-header-menu{       
+        position: relative;
+        top: -16px;
         padding: 0;
        /*  display: -webkit-box;
         display: -ms-flexbox; */
@@ -90,6 +108,7 @@ ul#menu-header-menu  {
         min-width: 320px;
         max-width: 100%;
         text-align: center;      
+      
     }
 
     #menu-header-menu > li> a{
@@ -109,9 +128,9 @@ ul#menu-header-menu  {
     }
 
 @media (min-width:576px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
-
+   
     #primary-menu{
-        display: grid;
+        display: none;
         grid-template-columns: repeat(4,minmax(100px, 1fr));
         grid-gap: 1px;
         
@@ -123,6 +142,9 @@ ul#menu-header-menu  {
         padding: 5px 10px 5px 10px;
     }
 
+    #menu-header-menu{  
+        display: none;
+    }
 
 }
 
@@ -141,6 +163,12 @@ ul#menu-header-menu  {
         list-style: none;
         background-color: #2196F3;
         padding: 5px 10px 5px 10px;
+    }
+
+    .site-title > a:nth-child(1){
+        position: relative;
+        font-size: 1.5555555556em;
+        top: -0.2em;
     }
 
     .menu-toggle{
