@@ -8,10 +8,9 @@
 .site-branding-search-menuIcon-wrapper{
     background-color:#b1040e;
     font-family: Source Sans Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
+    display: inline-block;
     width: 100%;
     text-align: right;
-    height: 2.6666666667em;
-    font-weight: 600;
 }
 
 #primary-menu{
@@ -57,17 +56,17 @@ ul#menu-header-menu  {
 
 @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
     
-    #site-navigation {
+    /* #site-navigation {
         position: relative;
         top: -16px;
-      }
+      } */
 
     #primary-menu{
         display: none;
         grid-template-columns: repeat(2,minmax(200px, 1fr));
         grid-gap: 0.02px;
         z-index: 900;
-        /* margin: 0; */
+        margin: 0;
         padding: 0;
         
     }
@@ -89,8 +88,6 @@ ul#menu-header-menu  {
     }
     
     #menu-header-menu{       
-        position: relative;
-        top: -16px;
         padding: 0;
        /*  display: -webkit-box;
         display: -ms-flexbox; */
