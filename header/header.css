@@ -47,7 +47,6 @@ ul#menu-header-menu  {
 
 
 #search-toggle , #menu-toggle{
-    margin: 10px;
     background-color: transparent;
     border: none;
     color: white;
@@ -110,6 +109,10 @@ ul#menu-header-menu  {
 
     #menu-header-menu > li> a{
         color:#000;
+    }
+
+    #search-toggle , #menu-toggle{
+        margin: 15px 10px 10px 10px;
     }
 
     /* #menu-header-menu > li> a {
@@ -184,6 +187,7 @@ ul#menu-header-menu  {
         background: transparent;
         display: flex;
         justify-content: flex-end;
+        margin-right: 4.5em;
     }
   
     #masthead > section > div > p > a::after{
